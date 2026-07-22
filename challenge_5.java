@@ -12,10 +12,8 @@ public class challenge_5{
         }else{
              System.out.print("your number is not found");
         }
-
-        
-        
-    }
+     
+      }
     public static boolean isFound(int arr[], int num){
      int index = 0;
      while(index< arr.length){
