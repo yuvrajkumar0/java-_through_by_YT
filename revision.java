@@ -53,7 +53,7 @@ public class revision {
         System.out.println("Second Largest = " + secondLargest);
     }
 }
-    */
+    
 
 public class revision{
 
@@ -81,6 +81,27 @@ public class revision{
         // Print array
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
+        }
+    }
+}
+    */
+
+public class revision {
+
+    public static void main(String[] args) {
+
+        String str = "madam";
+
+        String reverse = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse = reverse + str.charAt(i);
+        }
+
+        if (str.equals(reverse)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
         }
     }
 }
