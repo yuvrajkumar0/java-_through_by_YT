@@ -28,7 +28,7 @@ public class revision {
         }
     }
 }
-    */
+    
    public class revision {
 
     public static void main(String[] args) {
@@ -51,5 +51,36 @@ public class revision {
 
         System.out.println("Largest = " + largest);
         System.out.println("Second Largest = " + secondLargest);
+    }
+}
+    */
+
+public class revision{
+
+    public static void main(String[] args) {
+
+        int[] arr = {0, 1, 0, 3, 12};
+
+        int index = 0;
+
+        // Non-zero elements ko aage laao
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] != 0) {
+                arr[index] = arr[i];
+                index++;
+            }
+        }
+
+        // Remaining positions mein 0 daalo
+        while (index < arr.length) {
+            arr[index] = 0;
+            index++;
+        }
+
+        // Print array
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 }
